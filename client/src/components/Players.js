@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import PlayersCard from './PlayerCard'
+import PlayersCard from './PlayerCard';
+import NavBar from './NavBar';
 import axios from 'axios';
 
 
@@ -21,9 +22,8 @@ class Players extends Component {
     render() {
         return(
             <div>
-                <h1>Women's World Cup</h1>
+                <NavBar />
                 <PlayersCard players= {this.state.players} />
-
             </div>
         )
     };
